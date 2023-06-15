@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários | Fórmula quadrática</title>
+    <link rel="shortcut icon" href="../utilitarios/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/principal.css">
+
+    <style>
+        div.coeficientes {
+            display: inline-grid;
+            grid-template-columns: 1fr 4fr;
+            gap: 20px;
+            align-items: center;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Fórmula quadrática</h1>
+        <p class="descricao">
+            Conhecida no Brasil como "<a class="link-externo" href="https://pt.wikipedia.org/wiki/F%C3%B3rmula_quadr%C3%A1tica" target="_blank">fórmula de Bhaskara</a>", trata-se de um método resolutivo para equações do segundo grau utilizado para encontrar raízes a partir dos coeficientes da equação.
+        </p>
+    </header>
+
+    <main class="quadro">
+        <div class="lista-botoes">
+            <p>Insira os coeficientes da equação</p>
+            <div class="coeficientes">
+                <label for="idCoeficienteA">A</label>
+                <input type="tel" id="idCoeficienteA">
+                <label for="idCoeficienteB">B</label>
+                <input type="tel" id="idCoeficienteB">
+                <label for="idCoeficienteC">C</label>
+                <input type="tel" id="idCoeficienteC">
+            </div>
+
+            <p class="texto-resultado">Resultado</p>
+            <div id="idVisor"></div>
+
+            <button class=" botao" id="idBtCalcular">Calcular</button>
+            <button class=" botao" id="idBtApagar">Apagar</button>
+            <a class="botao" href="index.html">Voltar</a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="creditos">Desenvolvido por <a class="link-externo" href="https://github.com/romtta" target="_blank">Rodrigo Müller</a></p>
+    </footer> 
+    
+    <script src="scripts/bhaskara.js"></script>
+</body>
+</html>

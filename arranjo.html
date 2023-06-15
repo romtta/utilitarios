@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários | Arranjo</title>
+    <link rel="shortcut icon" href="../utilitarios/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/principal.css">
+
+    <style>
+        .numeros {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+            gap: 1px;
+        }
+
+        input {
+            margin: 5px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Arranjo</h1>
+        <p class="descricao">
+            <a class="link-externo" href="https://pt.wikipedia.org/wiki/Combinat%C3%B3ria#Arranjos" target="_blank">Arranjo simples</a> de N elementos tomados P a P, onde N é o total de elementos (n >= 1) e P o número de elementos escolhidos, em que cada maneira de tomar os elementos se diferenciam pela ordem e natureza dos elementos. 
+        </p>
+    </header>
+
+    <main class="quadro">
+        <div class="lista-botoes">
+            <p>Informe A (n, p)</p>
+            <div class="numeros">
+                <label for="idN">Valor N</label>
+                <input type="tel" id="idN">
+                <label for="idP">Valor P</label>
+                <input type="tel" id="idP">
+            </div>
+
+            <p class="texto-resultado">Resultado</p>
+            <div id="idVisor"></div>
+            
+            <button class=" botao" id="idBtCalcular">Calcular</button>
+            <button class=" botao" id="idBtApagar">Apagar</button>
+            <a class="botao" href="index.html">Voltar</a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="creditos">Desenvolvido por <a class="link-externo" href="https://github.com/romtta" target="_blank">Rodrigo Müller</a></p>
+    </footer>
+
+    <script src="scripts/arranjo.js"></script>
+</body>
+</html>

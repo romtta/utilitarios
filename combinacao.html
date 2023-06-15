@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários | Combinação</title>
+    <link rel="shortcut icon" href="../utilitarios/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/principal.css">
+
+    <style>
+        .numeros {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+            gap: 1px;
+        }
+
+        input {
+            margin: 5px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Combinação</h1>
+        <p class="descricao">
+            <a class="link-externo" href="https://pt.wikipedia.org/wiki/Combina%C3%A7%C3%A3o" target="_blank">Combinação simples</a> (sem repetição) é o número de grupos que podemos formar com P dos N objetos, todos diferentes, onde a ordem deles não faz diferença.
+        </p>
+    </header>
+
+    <main class="quadro">
+        <div class="lista-botoes">
+            <p>Informe C (n, p)</p>
+            <div class="numeros">
+                <label for="idN">Valor N</label>
+                <input type="tel" id="idN">
+                <label for="idP">Valor P</label>
+                <input type="tel" id="idP">
+            </div>
+
+            <p class="texto-resultado">Resultado</p>
+            <div id="idVisor"></div>
+            
+            <button class=" botao" id="idBtCalcular">Calcular</button>
+            <button class=" botao"id="idBtApagar">Apagar</button>
+            <a class="botao" href="index.html">Voltar</a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="creditos">Desenvolvido por <a class="link-externo" href="https://github.com/romtta" target="_blank">Rodrigo Müller</a></p>
+    </footer>
+
+    <script src="scripts/combinacao.js"></script>
+</body>
+</html>

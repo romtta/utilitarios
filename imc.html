@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários | IMC</title>
+    <link rel="shortcut icon" href="../utilitarios/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/principal.css">
+    
+    <style>
+        div.dados {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 1px;
+        }
+
+        label {
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        input {
+            margin: 8px auto;
+        }
+    </style>
+
+</head>
+<body>
+ 
+    <header>
+        <h1 class="titulo">Calculadora de IMC</h1>
+        <p class="descricao">
+            O <a class="link-externo" href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal" target="_blank">índice de massa corporal</a> (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde.
+        </p>
+    </header>
+
+    <main class="quadro">
+        <div class="lista-botoes">
+            <p>Informe seus dados</p>
+            <div class="dados">
+                <label for="idPeso">Peso (kg) </label>
+                <input type="tel" name="peso" id="idPeso">
+                <label for="idAltura">Altura (cm) </label>
+                <input type="tel" name="altura" id="idAltura">
+            </div>
+
+            <p class="texto-resultado">Resultado</p>
+            <div id="idVisor"></div>
+
+            <button class=" botao botao" id="idBtCalcular">Calcular</button>
+            <button class=" botao botao"id="idBtApagar">Apagar</button>
+            <a class="botao" href="index.html">Voltar</a>    
+        </div>
+    </main>
+
+    <footer>
+        <p class="creditos">Desenvolvido por <a class="link-externo" href="https://github.com/romtta" target="_blank">Rodrigo Müller</a></p>
+    </footer> 
+    
+    <script src="scripts/imc.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários | Troco</title>
+    <link rel="shortcut icon" href="../utilitarios/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/principal.css">
+
+    <style>
+        div.nome-quadro {
+            width: 210px; /* junto com padding e transform faz ajuste sobre o quadro */
+            padding: 15px;
+            transform: translate(-20px, -20px);
+            background-color: var(--cor-quadro-titulo);
+            color: var(--cor-texto);
+            font-family: var(--fonte-textos);
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        p.orientacao {
+            font-size: .9rem;
+            padding: 0;
+        }
+
+        p.texto-resultado, div#idVisor {
+            display: block;
+            text-align: left;
+            font-size: .9rem;
+            margin-top: 0;
+        }
+
+        div#idVisor {
+            border: 1px solid var(--cor-botao);
+        }
+
+        div.despesas, div.pagamento {
+            margin: 20px 10px;
+            text-align: left;
+        }
+
+        .label-despesa, .label-pagamento {
+            padding-right: 10px;
+        }
+
+        .input-despesa, .input-pagamento {
+            width: 90px;
+            font-size: .9rem;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Otimizador de troco</h1>
+        <p class="descricao">
+            Cadastre quantas despesas forem necessárias (VD), depois informe o valor recebido (VR) e clique em "Calcular Troco".
+        </p>
+    </header>
+
+    <main class="quadro">
+        <div class="nome-quadro">TROCO</div>
+        <div class="lista-botoes">
+
+            <p class="texto-resultado">Resultado</p>
+            <div id="idVisor"></div>
+
+            <div class="despesas">
+                <label class="label-despesa" for="idDespesa">VD R$</label>
+                <input class="input-despesa" type="tel" id="idDespesa">
+            </div>
+
+            <div class="pagamento">
+                <label class="label-pagamento" for="idPagamento">VR R$</label>
+                <input class="input-pagamento" type="tel" id="idPagamento">
+            </div>
+            
+            <button class=" botao" id="idBtCadastrar">Cadastrar</button>
+            <button class=" botao" id="idBtCalcular">Calcular Troco</button>
+            <button class=" botao"id="idBtReiniciar">Reiniciar</button>
+            <a class="botao" href="index.html">Voltar</a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="creditos">Desenvolvido por <a class="link-externo" href="https://github.com/romtta" target="_blank">Rodrigo Müller</a></p>
+    </footer> 
+    
+    <script src="scripts/troco.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+:root {
+    --cor-titulo: rgb(181, 225, 250);
+    --cor-descricao: rgb(7, 43, 58);
+    --cor-texto: rgb(209, 209, 209);
+    --cor-link: rgb(0, 34, 49);
+    --cor-link-hover: white;
+    
+    --cor-quadro: rgb(48, 46, 46);
+    --cor-quadro-titulo: rgb(34, 34, 34);
+
+    --cor-botao: rgb(65, 119, 163);
+    --cor-borda-botao: rgb(83, 81, 81);
+    --cor-botao-ativo: rgb(39, 39, 39);
+
+    --fonte-titulo: 'Lalezar', cursive;
+    --fonte-textos: 'Comfortaa', sans-serif;
+}
+
+
+/* PARA DISPOSITIVOS ATÉ 480PX*/
+
+body {
+    height: 100%;
+    background-image: linear-gradient(45deg, rgb(67, 67, 204), rgb(107, 175, 197), rgb(70, 123, 145), rgb(38, 67, 122));
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+header {
+    min-width: 300px;
+    margin: 50px 40px 30px 40px;
+}
+
+header > h1.titulo {
+    color: var(--cor-titulo);
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+header > p.descricao {
+    max-width: 600px;
+    margin: 10px auto 0 auto;
+    color: var(--cor-descricao);
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 30px;
+}
+
+main.quadro {
+    width: 200px;
+    background-color: var(--cor-quadro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+div.lista-botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-botoes p  { /* as instruções no quadro de cada app */
+    color: var(--cor-texto);
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    text-align: center;
+    line-height: 25px;
+    padding: 0 0 10px 0;
+}
+
+.botao {
+    margin: 10px;
+    padding: 15px;
+    background-color: var(--cor-quadro);
+    color: var(--cor-texto);
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid var(--cor-borda-botao);
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: var(--cor-botao);
+    border: 2px solid var(--cor-botao);
+}
+
+.botao:active {
+    background-color: var(--cor-botao-ativo);
+}
+
+a.link-externo {
+    color: var(--cor-link);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a.link-externo:hover {
+    color: var(--cor-link-hover);
+    text-decoration: none;
+}
+
+label {
+    color: var(--cor-texto);
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    text-align: center;
+}
+
+input {
+    width: 30px;
+    font-family: var(--fonte-textos);
+    font-size: .9rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+p.texto-resultado { /* caixa "resultado" que cerca a div idVisor */
+    font-size: .8rem;
+    text-align: left;
+    padding: 0;
+    margin: 20px 0 5px 10px;
+}
+
+div#idVisor {
+    color: var(--cor-texto);
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid var(--cor-borda-botao);
+    border-radius: 7px;
+    margin: 0 10px 10px 10px;
+    padding: 15px;
+}
+
+footer > p.creditos {
+    margin: 30px 0 80px 0;
+    color: var(--cor-descricao);
+    font-family: var(--fonte-textos);
+    font-size: .9rem;  
+    text-align: center;
+}
+
+
+/* PARA DISPOSITIVOS ACIMA DE 480PX */
+
+@media screen and (min-width: 480px) {
+    
+    header > h1.titulo {
+        font-size: 4rem;
+    }
+
+    header > p.descricao  {
+        font-size: 1.1rem;
+    }
+}
+
+/* PARA DISPOSITIVOS ACIMA DE 1440PX */
+
+@media screen and (min-width: 1440px) {
+
+    footer > p.creditos {
+        margin-bottom: 200px;  
+    }
+}

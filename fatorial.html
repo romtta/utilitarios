@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários | Fatorial</title>
+    <link rel="shortcut icon" href="../utilitarios/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/principal.css">
+
+    <style>
+        input {
+            width: 50px;
+            margin: 20px auto 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Fatorial</h1>
+        <p class="descricao">
+            O <a class="link-externo" href="https://pt.wikipedia.org/wiki/Fatorial" target="_blank">fatorial</a> de um número é a multiplicação desse número por todos os seus antecessores maiores que zero. Para representar o fatorial de um número, escrevemos o número seguido de um ponto de exclamação, ou seja, n! (lê-se “n fatorial”).
+        </p>
+    </header>
+
+    <main class="quadro">
+        <div class="lista-botoes">
+            <label for="idNumero">Insira o número</label>
+            <input type="tel" id="idNumero">
+
+            <p class="texto-resultado">Resultado</p>
+            <div id="idVisor"></div>
+
+            <button class=" botao" name="fatorial" id="idBtFatorial">Calcular</button>
+            <button class=" botao" name="apagar" id="idBtApagar">Apagar</button>
+            <a class="botao" href="index.html">Voltar</a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="creditos">Desenvolvido por <a class="link-externo" href="https://github.com/romtta" target="_blank">Rodrigo Müller</a></p>
+    </footer>
+
+    <script src="scripts/fatorial.js"></script>
+</body>
+</html>

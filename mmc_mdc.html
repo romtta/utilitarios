@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários | MMC e MCD</title>
+    <link rel="shortcut icon" href="../utilitarios/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/principal.css">
+
+    <style>
+        label {
+            margin: 0 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1 class="titulo">MMC & MDC</h1>
+        <p class="descricao">
+            O <a class="link-externo" href="https://pt.wikipedia.org/wiki/M%C3%ADnimo_m%C3%BAltiplo_comum" target="_blank">mínimo múltiplo comum</a> (MMC) corresponde ao menor número inteiro positivo, diferente de zero, que é múltiplo ao mesmo tempo de dois ou mais números. O <a class="link-externo" href="https://pt.wikipedia.org/wiki/M%C3%A1ximo_divisor_comum" target="_blank">máximo divisor comum</a> (MDC) corresponde ao produto dos divisores comuns entre dois ou mais números inteiros.
+        </p>
+    </header>
+    
+    <main class="quadro">
+        <div class="lista-botoes">
+            <p>Insira 2 números</p>
+            <div class="numeros">
+                <label for="idNum1">N1</label>
+                <input type="tel" id="idNum1">
+                <label for="idNum2">N2</label>
+                <input type="tel" id="idNum2">
+            </div>
+
+            <p class="texto-resultado">Resultado</p>
+            <div id="idVisor"></div>
+            
+            <button class=" botao botao-app" id="idBtCalcular">Calcular</button>
+            <button class=" botao botao-app"id="idBtApagar">Apagar</button>
+            <a class="botao botao-app" href="index.html">Voltar</a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="creditos">Desenvolvido por <a class="link-externo" href="https://github.com/romtta" target="_blank">Rodrigo Müller</a></p>
+    </footer>
+
+    <script src="scripts/mmc_mdc.js"></script>
+</body>
+</html>
